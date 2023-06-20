@@ -15,7 +15,7 @@
     font-size: 30px;
     line-height: 48px;
     font-weight: 700;
-    color: #291d0d;
+    color: var(--rain);
     margin-bottom: 16px;
 }
 .title-section .sub-title {
@@ -98,7 +98,7 @@
 .image-box-law .content-law .name {
     font-size: 21px;
     font-weight: 700;
-    color: #291d0d;
+    color: var(--rain);
     margin-bottom: 25px;
 }
 .image-box-law .content-law .description {
@@ -108,7 +108,7 @@
 .image-box-law .content-law a {
     font-size: 14px;
     font-weight: 700;
-    color: #291d0d;
+    color: var(--rain);
     text-transform: uppercase;
 }
 
@@ -117,7 +117,7 @@
 .featured .content .caption {
     font-size: 18px;
     font-weight: 700;
-    color: #291d0d;
+    color: var(--rain);
     text-transform: uppercase;
     margin-bottom: 2px;
     position: relative;
@@ -126,7 +126,7 @@
     font-size: 36px;
     line-height: 48px;
     font-weight: 700;
-    color: #291d0d;
+    color: var(--rain);
     margin-bottom: 32px;
 }
 .featured .content .description {
@@ -137,7 +137,7 @@
     font-weight: 700;
     display: inline-block;
     color: #fff;
-    background-color: #cca776;
+    background-color: var(--accent);
     padding: 10px 37px;
     text-transform: uppercase;
 }
@@ -190,9 +190,9 @@
 .view-all a {
     font-size: 16px;
     font-weight: 700;
-    color: #291d0d;
+    color: var(--rain);
     text-transform: uppercase;
-    border-bottom: 2px solid #cca776;
+    border-bottom: 2px solid var(--accent);
 }
 
 /* iconbox-features
@@ -200,7 +200,7 @@
 .iconbox-features .iconbox .iconbox-content .title a {
     font-size: 21px;
     font-weight: 700;
-    color: #291d0d;
+    color: var(--rain);
 }
 .iconbox-features .iconbox .iconbox-content .description {
     font-family: "Poppins", sans-serif;
@@ -208,7 +208,7 @@
 .iconbox-features .iconbox .iconbox-content .fl-btn a {
     font-size: 14px;
     font-weight: 700;
-    color: #291d0d;
+    color: var(--rain);
     text-transform: uppercase;
 }
 .iconbox-home {
@@ -262,7 +262,7 @@
     min-height: 432px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
-    border-bottom: 3px solid #cca776;
+    border-bottom: 3px solid var(--accent);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -357,7 +357,7 @@
     text-transform: uppercase;
     padding: 10px 36px 10px 36px;
     display: inline-block;
-    background-color: #cca776;
+    background-color: var(--accent);
 }
 .featured-banner-type2 {
     color: #ffffff;
@@ -389,7 +389,7 @@
     font-weight: 700;
     display: inline-block;
     color: #fff;
-    background-color: #cca776;
+    background-color: var(--accent);
     padding: 10px 37px;
     text-transform: uppercase;
 }
@@ -417,7 +417,7 @@
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #cca776;
+    background-color: var(--accent);
     left: 50%;
     margin-left: -1.5px;
 }
@@ -432,7 +432,7 @@
     position: absolute;
     margin-left: -18px;
     background-color: #fff;
-    border: 10px solid #cca776;
+    border: 10px solid var(--accent);
     z-index: 99;
     border-radius: 50%;
 }
@@ -469,7 +469,7 @@
     content: '';
     width: 100px;
     height: 3px;
-    background-color: #cca776;
+    background-color: var(--accent);
     position: absolute;
     top: 33px;
     right: -100px;
@@ -484,7 +484,7 @@
     position: absolute;
     margin-left: -18px;
     background-color: #fff;
-    border: 10px solid #cca776;
+    border: 10px solid var(--accent);
     z-index: 99;
     border-radius: 50%;
 }
@@ -500,7 +500,7 @@
     border-radius: 50%;
     z-index: 99;
     color: #fff;
-    background-color: #cca776;
+    background-color: var(--accent);
 }
 .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
@@ -521,7 +521,7 @@
     font-size: 18px;
     color: #ffffff;
     padding: 24px 15px 27px 15px;
-    background-color: #cca776;
+    background-color: var(--accent);
     font-family: "Poppins", sans-serif;
 }
 .timeline > li .timeline-panel .timeline-content {
@@ -532,7 +532,7 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 48px;
-    color: #291d0d;
+    color: var(--rain);
     margin-bottom: 14px;
 }
 .timeline > li .timeline-panel .timeline-content .description {
@@ -556,7 +556,7 @@
     visibility: hidden;
     cursor: pointer;
     overflow: hidden;
-    background: #cca776;
+    background: var(--accent);
 }
 #scroll-top.show {
     right: 24px;

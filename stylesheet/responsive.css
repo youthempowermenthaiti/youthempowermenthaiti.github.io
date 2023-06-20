@@ -326,7 +326,7 @@
       padding: 30px 15px;
       background-color: #fff;
       border: 1px solid #e5e5e5;
-      border-bottom: 3px solid #cca776;
+      border-bottom: 3px solid var(--accent);
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
@@ -492,14 +492,14 @@
       top: 25px;
       right: -10px;
       border-top: 10px solid transparent;
-      border-left: 15px solid #cca776;
+      border-left: 15px solid var(--accent);
       border-bottom: 10px solid transparent;
       background-color: unset;
     }
     .timeline > li.timeline-inverted > .timeline-panel:after {
       left: -10px;
       border-top: 10px solid transparent;
-      border-right: 15px solid #cca776;
+      border-right: 15px solid var(--accent);
       border-bottom: 10px solid transparent;
     }
     .timeline > li {
