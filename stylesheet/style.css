@@ -1567,7 +1567,7 @@ input::-webkit-input-placeholder {
 -------------------------------------------------------------- */
 #footer {
     padding: 118px 0 0 0;
-    background-color: #1e1c1a;
+    background-color: var(--rain);
 }
 #footer .footer-top {
     margin-bottom: 59px;
@@ -3065,3 +3065,33 @@ input::-webkit-input-placeholder {
     width: 100%;
 }
 
+#none { 
+    background-color:var(--accent);
+    padding: 8px 15px;
+    color: var(--rain);
+    border-radius: 5px;
+    rotate: -90deg;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    translate: 30px;
+    transition: 300ms;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 20;
+}
+#none:hover{
+
+    color: var(--accent);
+    background-color: var(--rain);
+} 
+#none:hover svg{
+    fill: var(--accent) !important;
+}
+svg{
+    fill: var(--rain) !important;
+    margin-right: 10px;
+   transition: 300ms;
+}
