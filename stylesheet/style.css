@@ -3075,7 +3075,7 @@ input::-webkit-input-placeholder {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
-    translate: 30px;
+    translate: 50px;
     transition: 300ms;
     position: fixed;
     top: 50%;
