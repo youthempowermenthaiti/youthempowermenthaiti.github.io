@@ -3073,7 +3073,6 @@ input::-webkit-input-placeholder {
     rotate: -90deg;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
     align-items: center;
     translate: 50px;
     transition: 300ms;
@@ -3081,6 +3080,10 @@ input::-webkit-input-placeholder {
     top: 50%;
     right: 0;
     z-index: 20;
+    display: none;
+}
+#none.active{
+    display: flex;
 }
 #none:hover{
 
