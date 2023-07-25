@@ -22,6 +22,58 @@
     <link rel="stylesheet" href="rev-slider/css/settings.css">
 
     <link href="icon/favicon.png" rel="shortcut icon">
+    <style>
+        .scroll-container {
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .pictures {
+            height: 200px;
+            display: flex;
+            white-space: nowrap;
+            animation: scrollImages 20s linear infinite;
+            
+        }
+        
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-100% + 5px));
+            }
+        }
+        
+        .pictures img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            margin-right: 5px;
+        }
+        
+        /* Scrollbar styles */
+        .scroll-container::-webkit-scrollbar {
+            width: 10px;
+            height: 1px;
+            border-radius: 5px;
+        }
+        
+        .scroll-container::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #888; 
+        }
+        
+        .scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+    </style>
 </head>
 
 <body class="counter-scroll">
@@ -678,7 +730,53 @@
         </div>
         <div class="style-text"></div>
     </section><!-- featured -->
-    
+    <section class="partners">
+        <div class="container">
+            <div class="title-section text-center">
+                <h3 class="flat-title">Our Partners</h3>
+                
+                <div class="col-lg-9 col-md-12">
+                    <div class="content-wrap clearfix">
+                        <div class="featured-post">
+                        </div>
+                        
+                        <!-- <div class="overview content-practice-single mg-practice-single">
+                            <h3 class="title"><a href="#">Structure</a></h3>
+                            <p class="sub-title">***Statement for the partners***</p>
+                           
+                        </div> -->
+                        <div class="two-columns d-lg-flex clearfix">
+                        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-container">
+
+                <div class="pictures">
+                    <img src="images/partners/01.png" alt="">  
+                    <img src="images/partners/02.png" alt="">  
+                    <img src="images/partners/03.png" alt="">  
+                    <img src="images/partners/04.png" alt="">  
+                    <img src="images/partners/05.png" alt="">  
+                </div>
+            </div>
+            <!-- <table class="partners-table">
+                <tbody>
+                    <tr>
+                        <td><img src="images/partners/001.png" alt="images"></td>
+                        <td><img src="images/partners/002.png" alt="images"></td>
+                        <td><img src="images/partners/003.png" alt="images"></td>
+                        <td><img src="images/partners/004.png" alt="images"></td>
+                        <td><img src="images/partners/005.png" alt="images"></td>
+                        <td><img src="images/home1/31.png" alt="images"></td>
+                    </tr>
+                
+                </tbody>
+            </table> -->
+        </div>
+    </section>
 
 
 
@@ -710,6 +808,20 @@
         </div>
         <a id="scroll-top" class="show"></a>
     </footer><!-- footer -->
+    <script>
+        const scrollContainer = document.querySelector('.scroll-container');
+const picturesContainer = document.querySelector('.pictures');
+
+function resetAnimation() {
+    // Reset animation by setting animation to none and then re-enabling it after a small delay
+    picturesContainer.style.animation = 'none';
+    void picturesContainer.offsetWidth; // Trigger a reflow
+    picturesContainer.style.animation = 'scrollImages 20s linear infinite';
+}
+
+picturesContainer.addEventListener('animationiteration', resetAnimation);
+
+    </script>
     <!--  button js -->
     <script src="javascript/buttonjs.js"></script>
 
