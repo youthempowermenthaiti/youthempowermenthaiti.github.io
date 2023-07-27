@@ -350,6 +350,7 @@ input::-webkit-input-placeholder {
 /* Hover
 -------------------------------------------------------------- */
 .page-title .breadcrumb li a:hover,
+.page-title-pic .breadcrumb li a:hover,
 .entry-content-bls .title a:hover,
 .entry-content-bl .title a:hover,
 .post-footer-bl li a:hover,
@@ -458,7 +459,7 @@ input::-webkit-input-placeholder {
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    transition-duration: 0.3
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
@@ -999,25 +1000,28 @@ input::-webkit-input-placeholder {
 
 /* page-title
 -------------------------------------------------------------- */
-.page-title {
-    background-image: url('../images/page-title/kendy.jpg');
+/* Common styles for both page titles */
+.page-title, .page-title-pic {
     background-size: cover;
     padding: 224px 0 71px 0;
     color: #fff;
 }
-.page-title .content h2 {
+
+.page-title .content h2, .page-title-pic .content h2 {
     font-size: 72px;
     line-height: 82px;
     font-weight: 700;
     margin-bottom: 37px;
     text-transform: capitalize;
 }
-.page-title .content p {
+
+.page-title .content p, .page-title-pic .content p {
     font-size: 21px;
     line-height: 33px;
     font-family: "Poppins", sans-serif;
 }
-.page-title .breadcrumb {
+
+.page-title .breadcrumb, .page-title-pic .breadcrumb {
     margin: 0;
     padding: 0;
     right: 15px;
@@ -1025,17 +1029,20 @@ input::-webkit-input-placeholder {
     position: absolute;
     background-color: unset;
 }
-.page-title .breadcrumb li a {
+
+.page-title .breadcrumb li a, .page-title-pic .breadcrumb li a {
     color: #fff;
     padding-left: 14px;
     margin-left: 14px;
     position: relative;
     font-family: "Poppins", sans-serif;
 }
-.page-title .breadcrumb li a.active {
+
+.page-title .breadcrumb li a.active, .page-title-pic .breadcrumb li a.active {
     font-weight: 700;
 }
-.page-title .breadcrumb li a:before {
+
+.page-title .breadcrumb li a:before, .page-title-pic .breadcrumb li a:before {
     content: '';
     width: 1px;
     height: 18px;
@@ -1045,8 +1052,19 @@ input::-webkit-input-placeholder {
     background-color: #fff;
     position: absolute;
 }
-.page-title .breadcrumb li:first-child a:before {
+
+.page-title .breadcrumb li:first-child a:before, .page-title-pic .breadcrumb li:first-child a:before {
     display: none;
+}
+
+/* Styles for the first page title */
+.page-title {
+    background-image: url('../images/page-title/kendy.jpg');
+}
+
+/* Styles for the second page title */
+.page-title-pic {
+    background-image: url('../images/page-title/kendy5.jpg');
 }
 
 /* blog
