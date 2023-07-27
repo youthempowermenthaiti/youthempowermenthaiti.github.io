@@ -34,7 +34,7 @@
             height: 200px;
             display: flex;
             white-space: nowrap;
-            animation: scrollImages 20s linear infinite;
+            animation: scrollImages 10s linear infinite;
             
         }
         
@@ -136,9 +136,9 @@
                                 <li>
                                     <a href="#">Projects</a>
                                     <ul class="sub-menu">
-                                        <li><a href="projects">Projects 1</a></li>
-                                        <li><a href="projects">Projects 2</a></li>
-                                        <li><a href="projects">Projects 3</a></li>
+                                        <li><a href="projects#yheep1">YHEEP 1</a></li>
+                                        <li><a href="projects#yheep2">HUMAN RIGHT ACADEMY 2</a></li>
+                                        <li><a href="projects">DE QUEL *DRO</a></li>
 
                                     </ul>
                                 </li>                             
@@ -825,7 +825,7 @@ function resetAnimation() {
     // Reset animation by setting animation to none and then re-enabling it after a small delay
     picturesContainer.style.animation = 'none';
     void picturesContainer.offsetWidth; // Trigger a reflow
-    picturesContainer.style.animation = 'scrollImages 20s linear infinite';
+    picturesContainer.style.animation = 'scrollImages 10s linear infinite';
 }
 
 picturesContainer.addEventListener('animationiteration', resetAnimation);
